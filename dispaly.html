@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet"
+          type="text/CSS"
+          href="{{ url_for('static', filename='CSS/display.css') }}"/>
+          <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+          <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    <style>
+        img {
+            border: 4px solid #000;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="color1"> !!! Your Picture !!!</h1>
+<h1>
+    <img src="{{ url_for('static', filename='images/Emotion_Pic1.jpg') }}" id="borderimage">
+</h1>
+<h1 id="color2">Lets find your mood today to suggest a song {{show}}</h1>
+<h1 id="color3"> Your mood is {{feel}} {{gra}}</h1>
+<h1><a href={{Link}}> Click here </a></h1>
+</body>
+</html>
