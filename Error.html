@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>input</title>
+     <link rel="stylesheet"
+          type="text/CSS"
+          href="{{ url_for('static', filename='CSS/input.css') }}"/>
+    <style>
+        h1{
+        color: red;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            }
+    </style>
+</head>
+<body>
+<h1>{{show}} Sorry your face could not be detected {{show}}</h1>
+</body>
+</html>
