@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>input</title>
-     <link rel="stylesheet"
-          type="text/CSS"
-          href="{{ url_for('static', filename='CSS/input.css') }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion-Based Music Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/input.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Lets find your mood today to suggest a song (^_^)</h1>
-<h2>
-<form action="/display" method = "POST">
-  <labeL class="center" id="color1"> Language (IF ANY) : </labeL><br>
-  <input type="text" , name="language"><br><br>
-  <labeL class="center" id="color1"> Singer (IF ANY) : </labeL><br>
-  <input type="text" , name="Singer"><br><br>
-    <p class="center">
-        Note: Face towards the camera and after adjusting press ENTER KEY<br>
-    </p>
-  <input type="submit" , value="LETS CLICK YOUR PICTURE">
-</form></h2>
+    <div class="container">
+        <h1>🎶 AI Mood-Based Music Recommender 🎭</h1>
+        <p>Face the camera, adjust yourself & hit ENTER to analyze emotions.</p>
+
+        <form action="/display" method="POST">
+            <div class="input-box">
+                <label for="language">🌎 Preferred Language (Optional):</label>
+                <input type="text" id="language" name="language" placeholder="e.g., English, Hindi, Spanish">
+            </div>
+
+            <div class="input-box">
+                <label for="singer">🎤 Favorite Singer (Optional):</label>
+                <input type="text" id="singer" name="singer" placeholder="e.g., Ed Sheeran, Arijit Singh">
+            </div>
+
+            <button type="submit">🚀 Capture & Analyze Emotion</button>
+        </form>
+    </div>
 </body>
 </html>
+
