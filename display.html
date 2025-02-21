@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/display.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Emotion Analysis 📷</h1>
+
+        <div class="image-box">
+            <img src="{{ url_for('static', filename='images/Emotion_Pic1.jpg') }}" class="emotion-image">
+        </div>
+
+        <h2>Your Detected Mood: <span>{{ feel }} {{ gra }}</span></h2>
+
+        <h3>🎵 <a href="{{ Link }}" target="_blank" class="music-link">🎧 Listen to Mood-Based Music</a></h3>
+    </div>
+</body>
+</html>
